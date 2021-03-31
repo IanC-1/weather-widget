@@ -1,6 +1,8 @@
 # stackup-digital
 Technical Test for Stackup Digital to create a weather widget.
+
 © 2021 Ian Curtis
+
 Author: Ian Curtis
 
 Built With:
