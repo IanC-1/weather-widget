@@ -1,0 +1,457 @@
+/*  Weather Widget CSS File     */
+/*  For Stackup Digital         */
+/*  © 2021 Ian Curtis           */
+/*  Author: Ian Curtis          */
+
+/*  Global Styles  */
+:root {
+  --sd-ic-01: #000;
+  --sd-ic-02: #fff;
+  --sd-ic-03: #f0f0f0;
+  --sd-ic-04: #e5e5e5;
+  --sd-ic-05: #f5f4f4;
+  --sd-ic-06: #ffa800;
+  --sd-ic-07: #ff0000;
+  --sd-ic-08: rgba(196, 99, 99, 0);
+  --sd-ic-09: #79c55f;
+  --sd-ic-10: #646464;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+a {
+  color: var(--sd-ic-01);
+  outline: 0;
+  text-decoration: none;
+}
+
+hr {
+  color: var(--sd-ic-03);
+  height: 1px;
+  position: relative;
+  top: -7.5px;
+  width: 250px;
+}
+
+.result,
+.weather-report {
+  margin: 0 auto;
+  position: relative;
+  visibility: hidden;
+}
+
+/*  End Of Global Styles    */
+/*  Container Styles    */
+#weather {
+  background-color: var(--sd-ic-04);
+  color: var(--sd-ic-01);
+  min-height: 1024px;
+  margin: 140px auto 0px auto;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+
+/*  End Of Container Styles */
+/*  Headings Styles */
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h2,
+h2 > a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.heading-1 {
+  height: 33px;
+  line-height: 30.47px;
+}
+
+.heading-2 {
+  height: 47px;
+  line-height: 18.75px;
+}
+
+.heading-3 {
+  height: 22.5px;
+  line-height: 18.75px;
+  margin-top: 15px;
+}
+/*  End Of Headings Styles  */
+
+/*    Search Component    */
+/*    Global   */
+.search-component {
+  position: relative;
+}
+
+.search-component > * {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-component > input {
+  background-color: var(--sd-ic-05);
+  border: none;
+  display: inline-block;
+  height: 100%;
+}
+
+.search-component > button {
+  background: linear-gradient(
+    266.79deg,
+    var(--sd-ic-06) 0%,
+    var(--sd-ic-07) 122.54%,
+    var(--sd-ic-08) 128.56%
+  );
+  border: none;
+  color: var(--sd-ic-02);
+  display: inline-block;
+  font-weight: 700;
+  height: 100%;
+}
+
+.search-component > button:active:focus {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/*  End Of Global    */
+/*    Small Device Specific    */
+.search-component {
+  height: 31.5px;
+  line-height: 15.235px;
+  margin: 17.5px auto 0 auto;
+  width: 264px;
+}
+
+.search-component > input {
+  font-size: 14px;
+  padding-left: 12.5px;
+  width: 192px;
+}
+.search-component > button {
+  font-size: 14px;
+  width: 72px;
+}
+/*  End Of Small Device Specific    */
+
+/*  End Of Search Component Styles  */
+
+/*  Results Component Styles  */
+/*  Global Styles   */
+.result {
+  display: inline-block;
+}
+
+.result-buttons,
+.result-title {
+  display: inline-block;
+  height: inherit;
+  text-align: left;
+}
+
+.result-buttons button {
+  background-color: var(--sd-ic-10);
+  border: none;
+  color: var(--sd-ic-02);
+  font-size: 14px;
+  height: 18px;
+  margin: 0 7.5px 15.5px 7.5px;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+}
+
+.result-buttons button:focus,
+button:active {
+  background-color: var(--sd-ic-09);
+}
+
+.result-title,
+.result-not-found {
+  margin: 0;
+  padding-top: 2px;
+  vertical-align: top;
+}
+
+/*  Small Device Specific */
+.result {
+  font-size: 14px;
+  height: 18px;
+  line-height: 15.235px;
+  margin-top: 15.5px;
+  text-align: left;
+  width: 264px;
+}
+
+.result-buttons {
+  width: 160px;
+}
+
+.result-title {
+  width: 104px;
+}
+/*  End Of Small Device Specific  */
+
+/*  End OF Results Component Styles */
+
+/*  Weather Report Component Styles */
+/*  Global  */
+.weather-report {
+  display: block;
+  margin: 23.5px auto 0 auto;
+  position: relative;
+  visibility: hidden;
+}
+
+.weather-daily {
+  display: inline-table;
+  font-weight: 700;
+  margin: 13.75px 2%;
+  text-align: center;
+}
+
+.weather-image {
+  margin: 0 auto;
+  position: relative;
+}
+
+.weather-image img {
+  width: 100%;
+}
+
+.weather-max-temp {
+  font-weight: 400;
+}
+
+/*  Small Device Specific Styles  */
+.weather-report {
+  min-width: 284px;
+  width: 93%;
+}
+
+.weather-daily {
+  font-size: 14px;
+  width: 57px;
+}
+
+.weather-image {
+  width: 50px;
+}
+/*  End OF Small Device Specific Styles */
+/*  End Of Global */
+
+/*  End Of Weather Report Component Styles  */
+
+/*  Footer Styles   */
+footer {
+  font-size: 12px;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+}
+/*  End Of Footer Styles    */
+
+/*  Media Queries   */
+
+/*  Medium Devices   */
+@media all and (min-width: 768px) and (max-width: 1439px) {
+  /*  Headings Styles */
+  h1 {
+    font-size: 39px;
+    font-weight: 700;
+  }
+
+  h2,
+  h2 > a {
+    font-size: 24px;
+  }
+
+  .heading-1 {
+    height: 49.5px;
+    line-height: 45.705px;
+  }
+
+  .heading-2 {
+    height: 70.5px;
+    line-height: 28.125px;
+  }
+
+  .heading-3 {
+    height: 33.75px;
+    line-height: 28.125px;
+    margin-top: 22.5px;
+  }
+
+  /*  End Of Headings Styles  */
+
+  hr {
+    top: -9.75px;
+    width: 400px;
+  }
+
+  /*    Search Component    */
+  .search-component {
+    height: 47.25px;
+    line-height: 22.85px;
+    margin: 26.25px auto 0 auto;
+    width: 472px;
+  }
+
+  .search-component > input {
+    font-size: 19.5px;
+    padding-left: 18.75px;
+    width: 336px;
+  }
+  .search-component > button {
+    font-size: 19.5px;
+    width: 136px;
+  }
+  /*  End Of Search Component */
+
+  /*  Result Component  */
+  .result {
+    font-size: 14px;
+    height: 25.5px;
+    line-height: 15.82px;
+    margin: 23.25px auto 0 auto;
+    width: 472px;
+  }
+
+  .result-buttons {
+    width: 363px;
+  }
+
+  .result-buttons button {
+    font-size: 14px;
+    height: 34px;
+  }
+
+  .result-title,
+  .result-not-found {
+    padding-top: 9px;
+  }
+
+  .result-title {
+    width: 109px;
+  }
+}
+/*  End Of Result Component */
+
+/*  End OF Medium Devices */
+/*  Large Devices   */
+@media all and (min-width: 1440px) {
+  #weather {
+    width: 1440px;
+  }
+
+  /*  Headings Styles */
+  h1 {
+    font-size: 52px;
+    font-weight: 700;
+  }
+
+  h2,
+  h2 > a {
+    font-size: 32px;
+  }
+
+  .heading-1 {
+    height: 66px;
+    line-height: 60.94px;
+  }
+
+  .heading-2 {
+    height: 94px;
+    line-height: 37.5px;
+  }
+
+  .heading-3 {
+    height: 45px;
+    line-height: 37.5px;
+    margin-top: 30px;
+  }
+  /*  End Of Headings Styles  */
+
+  hr {
+    top: -13px;
+    width: 500px;
+  }
+
+  /*    Search Component    */
+  .search-component {
+    height: 63px;
+    line-height: 30.47px;
+    margin: 35px auto 0 auto;
+    width: 630px;
+  }
+
+  .search-component > input {
+    font-size: 26px;
+    padding-left: 25px;
+    width: 448px;
+  }
+
+  .search-component > button {
+    font-size: 26px;
+    width: 182px;
+  }
+  /*  End Of Search Component */
+  /*  Result Component  */
+  .result {
+    font-size: 18px;
+    height: 34px;
+    line-height: 21.09px;
+    margin: 31px auto 0 auto;
+    width: 630px;
+  }
+
+  .result-buttons {
+    width: 484px;
+  }
+
+  .result-buttons button {
+    font-size: 18px;
+    height: 34px;
+  }
+
+  .result-title {
+    padding-top: 7px;
+    width: 146px;
+  }
+  /*  End Of Result Component */
+  /*  Weather Component */
+  .weather-report {
+    margin-top: 47px;
+    width: 1340px;
+  }
+
+  .weather-daily {
+    font-size: 18px;
+    margin: 0 27.5px;
+    width: 211px;
+  }
+
+  .weather-image {
+    width: 100px;
+  }
+}
+/*  End Of Media Queries    */
+
+/*  END OF FILE */
