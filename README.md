@@ -4,13 +4,19 @@ Technical Test for Stackup Digital to create a weather widget.
 Author: Ian Curtis
 
 Built With:
+
 • Visual Studio Code
+
 • Wampserver
 
 Tested On:
+
 • Mozilla Firefox Version 87.0 (64-bit)
+
 • Google Chrome Version 89.0.4389.90 (64-bit)
+
 • Opera Version 74.0.3911.218 (64-bit)
+
 • Microsoft Edge Version 89.0.774.63 (64-bit)
 
 Responsive Design Tested Using Mozilla Firefox Responsive Design Tools
