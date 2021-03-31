@@ -25,7 +25,7 @@ Installing
 
 If you just want to see the widget working:
 
-1.  Download the whole folder to the root folder of your local server. It is self-contained so;
+1.  Clone or download the whole stackup-digital folder to the root folder of your local server. It is self-contained so;
 2.  Open your browser and add /stackup-digital/ to the end of your local server url path.
 
 As an example, I built the widget using WAMPServer, so I created a folder called stackup-digital in the www folder of WAMP.
