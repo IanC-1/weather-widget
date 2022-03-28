@@ -1,5 +1,5 @@
 /*  Weather Widget JavaScript File     */
-/*  For Stackup Digital                */
+/*  For A Digital Agency               */
 /*  © 2021 Ian Curtis                  */
 /*  Author: Ian Curtis                 */
 
